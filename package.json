@@ -5,10 +5,10 @@
   "description": "React 앱 개발 환경 메뉴얼 구성",
   "scripts": {
     "start": "",
-    "server": "",
-    "bundle": "webpack",
-    "watch": "",
-    "build": "",
+    "server": "webpack serve --port 3000 --static dist --target web --mode development",
+    "bundle": "webpack --target web --mode development",
+    "watch": "npm run bundle -- --watch",
+    "build": "webpack build --target web --mode production",
     "clear": ""
   },
   "keywords": [
