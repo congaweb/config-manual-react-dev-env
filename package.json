@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "description": "React 앱 개발 환경 메뉴얼 구성",
   "scripts": {
-    "start": "",
-    "server": "webpack serve --port 3000 --static dist --target web --mode development",
-    "bundle": "webpack --target web --mode development",
-    "watch": "npm run bundle -- --watch",
-    "build": "webpack build --target web --mode production",
+    "start": "npm run serve -- --open",
+    "serve": "webpack serve --config webpack/config.server.js",
+    "bundle": "webpack --config webpack/config.dev.js",
+    "build": "webpack build --config webpack/config.build.js",
+    "test": "",
     "clear": ""
   },
   "keywords": [
@@ -24,5 +24,9 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
