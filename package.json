@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "config-manual-react-dev-env",
+  "version": "1.0.0",
+  "description": "React 앱 개발 환경 메뉴얼 구성",
+  "scripts": {
+    "start": "",
+    "server": "",
+    "bundle": "",
+    "watch": "",
+    "build": "",
+    "clear": ""
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "babel",
+    "sass",
+    "postcss"
+  ],
+  "author": "congaweb <barumming@gmail.com>",
+  "license": "ISC"
+}
