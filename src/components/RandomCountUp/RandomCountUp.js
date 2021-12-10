@@ -18,7 +18,7 @@ export class RandomCountUpClass extends React.Component {
   render() {
     // this.props
     return (
-      <div className="randomCountUp">
+      <div className="randomCountUp" data-testid="container">
         <output style={this.getCompletStyle()}>{this.props.count}</output>
       </div>
     );
