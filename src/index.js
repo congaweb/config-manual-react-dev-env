@@ -1,7 +1,7 @@
 import './styles/main.css';
 import React from 'react';
 import { render as domRender } from 'react-dom';
-import { RandomCountUp } from './components';
+import { RandomCountUpClass } from './components';
 import { settings, getRandomMinMax } from './utils';
 // ReactDOM render
 let bgmNode = null;
@@ -24,7 +24,10 @@ settings.autoPlaySound({
 });
 
 function render(count, isComplete) {
-  domRender(<RandomCountUp count={count} isComplete={isComplete} />, rootNode);
+  domRender(
+    <RandomCountUpClass count={count} isComplete={isComplete} />,
+    rootNode
+  );
 }
 function animate() {
   count += 1;
