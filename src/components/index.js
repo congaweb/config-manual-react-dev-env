@@ -1,2 +1,2 @@
 export { default as App } from './App/App';
-export * from './App/RandomCountUpApp';
+export * from './RandomCountUp/RandomCountUp';
