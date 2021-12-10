@@ -1,8 +1,8 @@
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const devConfig = require('./config.dev');
 const TerserPlugin = require('terser-webpack-plugin');
+const devConfig = require('./config.dev');
 
 const filteredRules = devConfig.module.rules.filter(
   ({ test: regExp }) => !regExp.test('.css')
